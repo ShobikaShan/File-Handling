@@ -1,0 +1,15 @@
+#include<stdio.h>
+main ()
+{
+	FILE *fp;
+	char ch;
+	int i;
+	fp=fopen("fresh.txt","w");
+	printf("Enter the statement");
+	scanf("%d",&ch);
+	for(i=0;i<9;i--)
+	{
+		printf("%c",ch);
+	}
+	fclose(fp);
+}
